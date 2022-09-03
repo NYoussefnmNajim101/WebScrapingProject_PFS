@@ -1,0 +1,31 @@
+{% extends 'base.html'%}
+{%load static%}
+
+{% block content %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}" />
+{% include 'navbar.html'%}
+    <div id="div0">
+         <div id="div1">
+           <form action="" method="POST">
+               {% csrf_token %}
+           <h1 class="h1">S'identifier</h1>
+           <input id="input1" type="text" name="email" value="" text="" placeholder="email">
+            <br/><br/>
+           <input id="input2" type="password" name="password" value="" placeholder="password">
+           <br><br>
+           <input id="input3" type="submit" name="" value="s'identifier">
+            <center><label class="text-danger">{{ msg }}</label></center>
+           </form>
+            <br><br><br>
+            <a class="af" href="inscrire">vous n'avez pas de compte?inscrivez-vos</a>
+          </div>
+        </form>
+
+        <div id="div2">
+            <br /><br>
+            <h1 class="h1r">nouveau concessionnaire </h1>
+            <p class="yoyo">vous voulez vendre une voiture ?</p>
+            <img id="img" src="{% static 'imgs/img5.png' %}" alt="">
+        </div>
+    </div>
+{% endblock%}

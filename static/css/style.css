@@ -1,0 +1,115 @@
+#div0 {
+    margin-top: 40px;
+    height: 500px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 200px;
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.07);
+    border-radius: 20px;
+    margin-left: 200px;
+    background-color: #2e4057;
+    margin-left: 300px;
+}
+
+#div1 {
+    background-color: #ffffff;
+    height: 500px;
+    width: 310px;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    color: #2e4057;
+}
+
+#div2 {
+    background-color: #2e4057;
+    height: 500px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    color: #ffffff;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#img {
+    margin-left: 100px;
+    margin-top: 140px;
+    height: 100px;
+    width: 100px;
+}
+
+.yoyo {
+    text-align: center;
+    color:white;
+}
+
+.h1r {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#input1 {
+    height: 30px;
+    width: 200px;
+    margin-top: 80px;
+    color: #2e4057;
+    border-color: #0598ff;
+    color: #2e4057;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#input2 {
+    height: 30px;
+    width: 200px;
+    color: #2e4057;
+    border-color: #0598ff;
+    text-decoration-color: #2e4057;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#input3 {
+    height: 35px;
+    width: 210px;
+    color: #ffffff;
+    background-color: #2e4057;
+    border-radius: 10px;
+}
+
+.af {
+    color:#2e4057;
+    text-decoration: none;
+    border-top: 30px;
+    margin-top: 20px;
+    font-size: 13pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+}
+.af :hover{
+    color: #4c2e57;
+    font-size: 15pt;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: lowercase;
+}
+#input3:hover {
+    color: #ffffff;
+    font-size: large;
+    background-color: #0598ff;
+}
+.add{
+    height: 100px;
+    width: 100%;
+}

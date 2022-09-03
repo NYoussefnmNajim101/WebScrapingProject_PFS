@@ -1,0 +1,155 @@
+  {% load static %}
+  {% load tage %}
+        <div class="portfolio-modal modal fade" id="portfolioModal{{car.id}}" tabindex="-1" aria-labelledby="portfolioModal{{car.id}}" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">car details</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{{car.img}}" alt="image not found " />
+                                    <br><br><br>
+                                    <!-- Portfolio Modal - Text-->
+                                    <table class="table table-bordered">
+                                          <thead>
+                                            <tr>
+
+                                              <th scope="col">Atribute</th>
+                                              <th scope="col">Value</th>
+
+                                            </tr>
+                                          </thead>
+                                          <tbody>
+                                            <tr>
+
+                                              <td>NAME</td>
+                                              <td><p class="mb-4">{{car.name}}</p></td>
+
+                                            </tr>
+
+                                            <tr>
+
+                                              <td>MARQUE</td>
+                                              <td><p class="mb-4">{{car.marque}}</p></td>
+
+                                            </tr>
+                                            <tr>
+
+                                              <td>MILEAGE</td>
+                                              <td><p class="mb-4">{{car.mileage}}</p></td>
+
+                                            </tr>
+                                            <tr>
+
+                                              <td>MODELE</td>
+                                              <td><p class="mb-4">{{car.model}}</p></td>
+
+                                            </tr>
+                                            <tr>
+
+                                              <td>PRICE</td>
+                                              <td><p class="mb-4">{{car.price}}</p></td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>GEARBOX </td>
+                                                <td><p class="mb-4">{{car.gearbox}}</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>FUEL</td>
+                                                <td><p class="mb-4">{{car.fuel}}</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>DATE OF PUBLICATION </td>
+                                                <td><p class="mb-4">{{car.dateOfPub}}</p></td>
+                                            </tr>
+                                            <tr>
+                                                <td>FISCAL POWER </td>
+                                                <td><p class="mb-4">{{car.fiscalPower}}</p></td>
+                                            </tr>
+                                          <tr>
+                                              <td>phone concessionnaire</td>
+                                              <td><p class="mb-4">{{car.concessionnaire.phone}}</p></td>
+                                          </tr>
+
+
+                                          </tbody>
+                                    </table>
+                                    {% if car.description != "" %}
+                                    <div class="card-body">
+                                        <h3>DESCRIPTION</h3>
+                                        <p class="mb-4">{{car.description}}</p>
+                                    </div>
+                                    {% endif %}
+                                    {% with 0 as data %}
+                                    <h1>similar cars</h1>
+                                    <br>
+                                     <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+                                        {% for car1 in cars %}
+                                         {% if data < 3 %}
+
+                                         {% if car1.marque == car.marque %}
+                                         {% if car1.name != car.name %}
+                                         {% setvar data as data %}
+
+
+                                        <div class="col">
+                                                    <div class="card h-100">
+                                                    <div class="col-md-6 col-lg-4 mb-5">
+                                                            <div class="portfolio-item mx-auto  h-100 w-100" data-bs-toggle="modal" data-bs-target="#portfolioModal{{car1.id}}">
+                                                                <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                                                </div>
+                                                                    <img class="img-fluid  h-100 w-100" src="{{car1.img}}"  style="max-height: 300px ;min-height: 200px" alt="..." />
+                                                                </div>
+
+
+                                                            </div>
+
+                                                    <div class="card-body">
+                                                        <h4 class="card-title">{{car1.name}}</h4>
+                                                        <h6 class="card-title" style="float:right">prix : {{car1.price}} DH</h6>
+                                                        <br>
+
+
+                                                    </div>
+
+                                                    </div>
+                                                </div>
+                                         {% endif %}
+                                         {% endif %}
+                                         {% endif %}
+
+
+
+
+
+                                        {% endfor %}
+                                    </div>
+                                    {% endwith %}
+
+                                    <p class="mb-4"></p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        

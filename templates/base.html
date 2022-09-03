@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+        <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="{% static 'imgs/favicon.ico' %}" />
+        <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
+    <title>YAS WEBSITE</title>
+</head>
+
+
+{%block content%}
+  
+{%endblock%}   
+
+<script>
+    var i = 0;
+    var images = [];
+    var time = 3000;
+
+    images[0] = '/static/imgs/img1.jpg';
+    images[1] = '/static/imgs/img2.jpg';
+    images[2] = '/static/imgs/img3.jpg';
+    images[3] = '/static/imgs/img4.jpg';
+    images[4] = '/static/imgs/img6.jpg';
+    images[5] = '/static/imgs/img7.jpg';
+    images[6] = '/static/imgs/img8.jpg';
+    images[7] = '/static/imgs/img9.jpg';
+    images[8] = '/static/imgs/img10.jpg';
+    images[9] = '/static/imgs/img11.jpg';
+    function changeImg() {
+        document.slide.src = images[i];
+        if (i < images.length - 1) {
+            i++;
+        } else {
+            i = 0;
+        }
+        setTimeout("changeImg()", time);
+    }
+    window.onload = changeImg;
+</script>
+</html>

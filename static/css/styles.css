@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: white;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* nav styles */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  background-color: #2e4057;
+  height: 100px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  color: white;
+  padding-left: 20px;
+}
+
+.nav__link {
+  position: fixed;
+  width: 94%;
+  height: 80px;
+  top: 5rem;
+  left: 18px;
+  background-color: lightblue;
+}
+
+.nav__link a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+.nav__link a::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  background-color: rgb(255, 255, 255);
+  transition: width 0.25s ease-out;
+}
+.nav__link a:hover::before {
+  width: 100%;
+  left: 0;
+  right: auto;
+}
+
+.nav__link a:hover {
+  background-color: #1c2736;
+  transition: width 0.25s ease-out;
+  font-family: sans-serif;
+  font-weight: lighter;
+  border-bottom: white solid;
+}
+
+.hide {
+  display: none;
+}
+p{
+  text-align: center;
+}
+.loo {
+    margin-top:40px;
+    margin-left: 0px;
+    width: 618px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    padding: 2px 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #1c2736;
+    border: 1px solid hsla(0,0%,100%,.7686274509803922);
+    overflow-y: hidden;
+    border-radius: 4px;
+    box-shadow: 0 8px 10px 2px rgba(28 39 54 0.8);
+  }
+.yoo {
+    margin-top:10px;
+    margin-left: 0px;
+    width: 618px;
+    height: 310px;
+    display: flex;
+    padding: 2px 5px;
+    background-color: #1c2736;
+    border: 1px solid hsla(0,0%,100%,.7686274509803922);
+    overflow-y: hidden;
+    border-radius: 4px;
+    box-shadow: 0 8px 10px 2px rgba(28 39 54 0.8);
+    align-items: center;
+
+    justify-content: center;
+
+  }
+
+  .slideImg{
+    width: 625px;
+    height: 310px;
+  }
+
+@media screen and (min-width: 600px) {
+  .nav__link {
+    display: block;
+    position: static;
+    width: auto;
+    margin-right: 20px;
+    background: none;
+  }
+
+  .nav__link a {
+    display: inline-block;
+    padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+.container1{
+  background-color: white;
+  height: 1000px;
+  width: 1280px;
+}

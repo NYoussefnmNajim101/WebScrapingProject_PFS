@@ -1,0 +1,27 @@
+{%extends 'base.html'%}
+ {% load static%}
+ {% block content %}
+ <link rel="stylesheet" href="{% static 'css/search.css' %}">
+ <link href="{% static 'css/stylesi.css' %}" rel="stylesheet" />
+  {% include 'concesNavbar.html' %}
+
+ <div class="container">
+    <form class="px-4 py-3" method="POST" action="" enctype="multipart/form-data">
+      {% csrf_token %}
+          <br><br>
+            <div class="container col ">
+              <h6>NEW CAR</h6>
+              <p >Please fill in this form to add a new car </p>
+             <div class="card h-100">
+                <br>
+                 {{CarForm}}
+                  <br>
+                  <div class="clearfix">
+                  <a type="button" style="text-transform:lowercase" href="/login/myPosts" class="btn btn-danger">cancel</a>
+                  <button type="submit" class="signupbtn btn btn-primary me-md-2">submit</button>
+              </div>
+              </div>
+          </div>
+    </form>
+ </div>
+{% endblock %}

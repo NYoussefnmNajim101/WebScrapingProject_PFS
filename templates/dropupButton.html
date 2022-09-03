@@ -1,0 +1,27 @@
+<div class="btn-group dropup d-grid gap-2 col-6 mx-auto">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    add new car 
+  </button>
+  <div class="dropdown-menu ">
+     <form class="px-4 py-3" method="POST" action="">
+          {% csrf_token %}
+        <div class="container col ">
+            <h6>NEW CAR</h6>
+            <p >Please fill in this form to add a new car </p>
+             <br>
+                   {{postForm}}
+             <br>
+              <div class="card h-100">
+                   {{carForm}}
+                   say hello to my little friend 
+              </div>    
+            
+            <br>
+            <div class="clearfix">
+                <button type="button" class="cancelbtn btn btn-danger">Cancel</button>
+                <button type="submit" class="signupbtn btn btn-primary me-md-2">submit</button>
+            </div>
+        </div>
+    </form>
+  </div>
+</div>

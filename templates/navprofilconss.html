@@ -1,0 +1,32 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/concesCss.css' %}">
+<div class="wrapper">
+	<div class="navbaro">
+		<div class="logo">
+		</div>
+		<div class="nav_right">
+			<ul>
+				<li class="nr_li dd_main">
+					<img src="{% static 'imgs/img/avataaars.svg'%}" alt="profile_img">
+
+					<div class="dd_menu">
+						<div class="dd_left">
+							<ul>
+								<li><i class="far fa-plus-square"></i></li>
+
+								<li><i class="fas fa-sign-out-alt"></i></li>
+							</ul>
+						</div>
+						<div class="dd_right">
+							<ul>
+								<li>  <a href="{% url 'profilConss' %}">Profile</a></li>
+
+								<li><a href="{% url 'home1' %}">Logout</a></li>
+							</ul>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

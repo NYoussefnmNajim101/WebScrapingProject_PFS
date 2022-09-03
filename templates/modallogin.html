@@ -1,0 +1,45 @@
+   {% load static %}
+  {% load tage %}
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <div class="portfolio-modal modal fade" id="portfolioModal{{car.id}}" tabindex="-1" aria-labelledby="portfolioModal{{car.id}}" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5 d-flex flex-wrap align-items-center bg-info">
+                         <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">car details</h2>
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <p> vous devez se connecter d'abord ! </p>
+                        <div class="container" style="margin-right:300px">
+                            <div id="div0">
+                                 <div id="div1">
+                                   <form action="{% url 'login' %}" method="POST">
+                                       {% csrf_token %}
+                                   <h1 class="h1">S'identifier</h1>
+                                   <input id="input1" type="text" name="email" value="" text="" placeholder="email">
+                                    <br/><br/>
+                                   <input id="input2" type="password" name="password" value="" placeholder="password">
+                                   <br><br>
+                                   <input id="input3" type="submit" name="" value="s'identifier">
+                                    <center><label class="text-danger">{{ msg }}</label></center>
+                                   </form>
+                                    <a style="" class="af" href="/login/inscrire">vous n'avez pas de compte ? inscrivez-vous</a>
+                                  </div>
+                                </form>
+
+                                <div id="div2">
+                                    <br /><br>
+                                    <h3 class="h1r" style="color: white;text-decoration: none;text-transform:lowercase">nouveau concessionnaire ou client </h3>
+                                    <p class="yoyo"><a style="color: white;text-decoration: none;text-transform:lowercase" href="/login/inscrire">vous voulez vendre ou acheter une voiture ?</a></p>
+                                    <img id="" src="{% static 'imgs/img5.png' %}" alt="">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

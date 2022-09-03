@@ -1,0 +1,310 @@
+{%extends 'base.html'%}
+ {% load static%}
+ {% block content %}
+ <link rel="stylesheet" href="{% static 'css/search.css' %}"> 
+ <link href="{% static 'css/stylesi.css' %}" rel="stylesheet" />
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+
+  {% include 'navbar2.html' %}
+   <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="{% static 'imgs/img/avataaars.svg' %}" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">YAS DEALERS</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">A WEBSITE OF YAS CAR DEALERS</p>
+            </div>
+        </header>
+          <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">MEGA DEALERS</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+
+                <!-- Portfolio Grid Items-->
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+
+
+
+                    <div class="col">
+                              <div class="card h-100">
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto  h-100 w-100" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                                <img class="img-fluid  h-100 w-100"  src="{% static 'imgs/img/portfolio/Youssef.jpg' %}" style="min-height: 200px; max-height:400px"  alt="Image not found " />
+                                          </div>            
+                                        </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">YOUSSEF NAJIM </h4>
+                                    <h6 class="card-title" style="float:left"><{$}></h6>
+                                    <br>
+                                </div>
+                                
+                              </div>
+                      </div>
+                      
+                    <div class="col">
+                              <div class="card h-100">
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto  h-100 w-100" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                                <img class="img-fluid  h-100 w-100"  src="{% static 'imgs/img/portfolio/sadougg.jpg' %}" style="min-height: 200px; max-height:360px"  alt="Image not found " />
+                                          </div>            
+                                        </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">SADDOUG ELMADANI </h4>
+                                    <h6 class="card-title" style="float:left"><[$^$]></h6>
+                                    <br>
+                                </div>
+                                
+                              </div>
+                      </div>
+                      
+                    <div class="col">
+                              <div class="card h-100">
+                                <div class="col-md-6 col-lg-4 mb-5">
+                                        <div class="portfolio-item mx-auto  h-100 w-100" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                            <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                                            </div>
+                                                <img class="img-fluid  h-100 w-100"  src="{% static 'imgs/img/portfolio/ali.jpeg' %}" style="min-height: 200px; max-height:360px"  alt="Image not found " />
+                                          </div>            
+                                        </div>
+                                <div class="card-body">
+                                    <h4 class="card-title">NACIRI ALI </h4>
+                                    <h6 class="card-title" style="float:left"><.{/$/}.></h6>
+                                    <br>
+                                </div>
+                                
+                              </div>
+                      </div>
+
+                    
+                      
+                    
+               
+                          </div>
+                          
+                    
+                
+                 </div>
+             </div>
+        </section>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MEGA DEALER</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'imgs/img/portfolio/Youssef.jpg' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <br><br><br>
+                                     <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col"> Info </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">first name</th>
+                                            <td>YOUSSEF</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">last name </th>
+                                            <td>NAJIM </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> phone </th>
+                                            <td colspan="2">0648577248</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> email </th>
+                                            <td colspan="2">najimyoussef74@gmail.com</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> adresse </th>
+                                            <td colspan="2">DR LAGRARCHA SIDI AISSA KELAAT SRAGHNA </td>
+                                          </tr>
+                                           <tr>
+                                            <th scope="row"> job </th>
+                                            <td colspan="2">Web Developper</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <br><br>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MEGA DEALER</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'imgs/img/portfolio/sadougg.jpg' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col"> Info </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">first name</th>
+                                            <td>ELMADANI</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">last name </th>
+                                            <td>SADDOUG </td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> phone </th>
+                                            <td colspan="2">0680276234</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> email </th>
+                                            <td colspan="2">elmadani.saddoug@gmail.com</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> adresse </th>
+                                            <td colspan="2">ZAGORA </td>
+                                          </tr>
+                                           <tr>
+                                            <th scope="row"> job </th>
+                                            <td colspan="2">Web Developper</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <br><br>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">MEGA DEALER </h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="{% static 'imgs/img/portfolio/ali.jpeg' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <table class="table table-hover">
+                                      <thead>
+                                          <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col"> Info </th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <th scope="row">first name</th>
+                                            <td>ALI</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row">last name </th>
+                                            <td>NACIRI</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> phone </th>
+                                            <td colspan="2">0616767676</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> email </th>
+                                            <td colspan="2">alinaciri@gmx.com</td>
+                                          </tr>
+                                          <tr>
+                                            <th scope="row"> adresse </th>
+                                            <td colspan="2">HAY ENNASSIRYINE ZAGORA </td>
+                                          </tr>
+                                           <tr>
+                                            <th scope="row"> job </th>
+                                            <td colspan="2">Web Developper</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                      <br><br>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         {% include 'footer.html' %}
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  {% endblock %}
