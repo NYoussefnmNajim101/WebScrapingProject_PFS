@@ -5,10 +5,12 @@
 
 # so if you want the project to work follow those easy steps 
 
-#~> create a virtual environment for a django project 
-#~> clone this project inside that virtual environment
-#~> cd  to this folder
-#~> python manage.py runserver 
+
+
+#> create a virtual environment for a django project 
+#> clone this project inside that virtual environment
+#> cd  to this folder
+#> python manage.py runserver 
 
 
 
